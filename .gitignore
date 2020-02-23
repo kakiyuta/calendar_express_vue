@@ -1,0 +1,8 @@
+# OS
+.DS_Store
+
+# エディタ
+.vs_code
+
+# node.js関連
+node_modules
