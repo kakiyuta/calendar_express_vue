@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  v-app(id="inspire")
+    include parts/app_bar
+    v-content
+      v-container(class="fill-height" fluid)
+        v-row(class="fill-height")
+          v-col
+            v-heet(height="64")
+              v-toolvar(float, color="white")
+                v-btn(outlined, class="mr-4", color="grey darken-2", @click="setToday") Today
